@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #030303;
+  color: #f7f7f7;
+  height: 100%;
+}
+
+.main {
+  &__inner {
+    display: flex;
+  }
+}
+
+.content {
+  background-color: #030303;
+  width: 100%;
+  padding-top: 35px;
+}
