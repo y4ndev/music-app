@@ -1,3 +1,5 @@
+import RootLayout from "../layout";
+
 export default function HomePage() {
-  return <div>Home</div>;
+  return <RootLayout headerChildren={<>Title</>}>Home</RootLayout>;
 }

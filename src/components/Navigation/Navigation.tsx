@@ -1,39 +1,41 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 import style from "./Navigation.module.scss";
 
-const Navigation = () => {
+interface NavCategory {
+  label: string;
+  href: string;
+}
+
+interface NavLinks {
+  top: NavCategory[];
+  middle: NavCategory[];
+  bottom: NavCategory[];
+}
+
+interface Props {
+  navLinks: NavLinks;
+}
+
+const Navigation = ({ navLinks }: Props) => {
+  const pathname = usePathname();
+
+  const renderMenuItems = (menuItems: NavCategory[]) =>
+    menuItems.map((item, index) => (
+      <li key={index} className={pathname === item.href ? style.active : ""}>
+        <Link href={item.href}>{item.label}</Link>
+      </li>
+    ));
+
   return (
     <nav className={style.menu}>
-      <ul className={style.listTop}>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/search">Search</Link>
-        </li>
-        <li>
-          <Link href="/library">My library</Link>
-        </li>
-      </ul>
+      <ul className={style.listTop}>{renderMenuItems(navLinks.top)}</ul>
 
-      <ul className={style.listMiddle}>
-        <li>
-          <Link href="/playlist">New playlist</Link>
-        </li>
-        <li>
-          <Link href="/liked">Liked songs</Link>
-        </li>
-      </ul>
+      <ul className={style.listMiddle}>{renderMenuItems(navLinks.middle)}</ul>
 
-      <ul className={style.listBottom}>
-        <li>
-          <Link href="/settings">Settings</Link>
-        </li>
-        <li>
-          <Link href="/">Log out</Link>
-        </li>
-      </ul>
+      <ul className={style.listBottom}>{renderMenuItems(navLinks.bottom)}</ul>
     </nav>
   );
 };

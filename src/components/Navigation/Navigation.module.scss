@@ -11,10 +11,30 @@
   }
   ul li {
     margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  ul li.active {
+    background: #3e3e3e;
+  }
+
+  ul li.active a {
+    color: #ffffff;
+  }
+
+  ul a {
+    color: #d2d2d2;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    display: block;
   }
 
   .listTop {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .listBottom {
