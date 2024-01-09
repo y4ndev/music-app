@@ -3,6 +3,7 @@ import "./globals.scss";
 import { Inter } from "next/font/google";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { Login } from "@/components/Login/Login";
+import { Header } from "@/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,13 +12,7 @@ export const metadata = {
   description: "free music app",
 };
 
-export default function RootLayout({
-  children,
-
-}: {
-  children: React.ReactNode;
- 
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -25,9 +20,7 @@ export default function RootLayout({
           <div className="main__inner">
             <Sidebar />
             <section className="content">
-              <div className="header">
-                <Login />
-              </div>
+              <Header />
               {children}
             </section>
           </div>
