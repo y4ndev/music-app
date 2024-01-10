@@ -2,7 +2,6 @@ import "normalize.css";
 import "./globals.scss";
 import { Inter } from "next/font/google";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
-import { Login } from "@/components/Login/Login";
 import { Header } from "@/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });

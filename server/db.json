@@ -1,0 +1,49 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/575/no-way-with-avi-snow-1701738051-ycX7Pmg8AZ.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/575/100x100/1701781179_FHGSNgDVjG_nwv3.png",
+      "duration": 428,
+      "title": "No Way (with Avi Snow)",
+      "artists": "BIMINI, Avi Snow",
+      "genres": "chill"
+    },
+    {
+      "id": 2,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/009/symphony-1631872836-pRVujQOZN4.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/009/100x100/symphony-1631872833-49AAyxTSRw.jpg",
+      "duration": 310,
+      "title": "Symphony",
+      "artists": "Donna Tella, Arc North",
+      "genres": "chill"
+    },
+    {
+      "id": 3,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/918/higher-1615464034-BB3KKEe6oh.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/918/100x100/higher-1615464030-TYT4oWJbOt.jpg",
+      "duration": 252,
+      "title": "Higher",
+      "artists": "Vanessa Campagna, Hoober",
+      "genres": "chill"
+    },
+    {
+      "id": 4,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/582/triple-no-1702551651-1S59sasB7E.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/582/100x100/triple-no-1702551649-Itmcwr9bkd.jpg",
+      "duration": 254,
+      "title": "triple no",
+      "artists": "yanvince",
+      "genres": "pop"
+    },
+    {
+      "id": 5,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/564/karma-1699578053-M8wfhj548e.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/564/100x100/karma-1699578050-oMEcQ9p5Gw.jpg",
+      "duration": 309,
+      "title": "Karma",
+      "artists": "Alaina Cross",
+      "genres": "pop"
+    }
+  ]
+}

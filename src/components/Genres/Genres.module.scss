@@ -1,0 +1,13 @@
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.item {
+  width: 350px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 10px;
+}
