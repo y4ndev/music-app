@@ -1,56 +1,29 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
-import { dataApi, IData } from "@/services/musicData";
+import React, { useEffect } from "react";
+
 import style from "./Popular.module.scss";
+import { useDataStore } from "@/store/store";
+import { Track } from "../Track/Track";
 
 const Popular = () => {
-  const [data, setData] = useState<IData[]>([]);
-  const [currentSong, setCurrentSong] = useState<IData | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
+  const data = useDataStore((state) => state.data);
+  const fetchData = useDataStore((state) => state.fetchData);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const postsData = await dataApi.getPosts();
-        setData(postsData);
-      } catch (error) {
-        console.error("Error", error);
-      }
-    };
-
     fetchData();
   }, []);
-
-  const handlePlayPause = (song: IData) => {
-    if (audioRef.current && currentSong && currentSong.id === song.id) {
-      // Текущая песня совпадает с выбранной
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-    } else {
-      // Выбрана новая песня
-      setCurrentSong(song);
-      if (audioRef.current) {
-        audioRef.current.src = song.src;
-        audioRef.current.play();
-      }
-    }
-  };
 
   return (
     <div className={style.popular}>
       <h2 className={style.title}>Popular Songs</h2>
       <div className={style.items}>
         {data.map((song) => (
-          <div key={song.id} className={style.item} onClick={() => handlePlayPause(song)}>
-            {song.title}
-          </div>
+          // <div key={song.id} className={style.item} onClick={() => handlePlayPause(song)}>
+          //   {song.title}
+          // </div>
+          <Track key={song.id} {...song} />
         ))}
       </div>
-      <audio ref={audioRef} onEnded={() => setCurrentSong(null)} />
     </div>
   );
 };
