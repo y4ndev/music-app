@@ -1,13 +1,14 @@
 import { create } from "zustand";
 
 interface IAudioStore {
-  currentTrack: string | null;
-  setCurrentTrack: (trackId: string | null) => void;
+  currentTrackId: number | null;
+  setCurrentTrackId: (id: number | null) => void;
 }
 
 const useAudioStore = create<IAudioStore>((set) => ({
-  currentTrack: null,
-  setCurrentTrack: (trackId) => set({ currentTrack: trackId }),
+  currentTrackId: null,
+  isPLaying: false,
+  setCurrentTrackId: (id) => set({ currentTrackId: id }),
 }));
 
 export default useAudioStore;
