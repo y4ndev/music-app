@@ -44,6 +44,69 @@
       "title": "Karma",
       "artists": "Alaina Cross",
       "genres": "pop"
+    },
+    {
+      "id": 6,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/554/dont-understand-1698105652-ywo5B7S3Ei.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/554/100x100/1698141643_Ei0ENTsgvb_DONT-UNDERSTAND---SKETCHEZ---FINAL.png",
+      "duration": 218,
+      "title": "Don't Understand",
+      "artists": "Sketchez",
+      "genres": "pop"
+    },
+    {
+      "id": 7,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/583/whats-the-problem-1702551656-evxTC7URyG.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/583/100x100/whats-the-problem-1702551653-S6dwHsSBAg.jpg",
+      "duration": 228,
+      "title": "What's The Problem?",
+      "artists": "OSKI",
+      "genres": "pop"
+    },
+    {
+      "id": 8,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/565/baby-sweet-1699923653-5uljk6xJ24.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/565/100x100/baby-sweet-1699923651-ffzadcXrD3.jpg",
+      "duration": 253,
+      "title": "Baby Sweet",
+      "artists": "intouch",
+      "genres": "house"
+    },
+    {
+      "id": 9,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/561/baby-1699318850-ZtR7u0YD5R.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/536/100x100/nebraska-with-you-1696464048-6neIAXprrn.jpg",
+      "duration": 238,
+      "title": "NEBRASKA (WITH YOU)",
+      "artists": "Sam Day",
+      "genres": "house"
+    },
+    {
+      "id": 10,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/534/calling-for-you-1695985248-DLllaKxrPq.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/534/100x100/calling-for-you-1695985245-HinZpbEI4o.jpg",
+      "duration": 341,
+      "title": "Calling For You",
+      "artists": "Venjent, Oktae",
+      "genres": "house"
+    },
+    {
+      "id": 11,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/154/no-way-back-1656410438-DYBZU8U2rN.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/154/100x100/no-way-back-1656410436-lmCSrM15Fp.jpg",
+      "duration": 239,
+      "title": "No Way Back",
+      "artists": "Custody, Just Isac, MADZI, SFRNG",
+      "genres": "bass"
+    },
+    {
+      "id": 12,
+      "src": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/006/what-you-like-1631271635-cC2vMe487N.mp3",
+      "preview": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/006/100x100/what-you-like-1631271631-1nbDNE73Qu.jpg",
+      "duration": 238,
+      "title": "What You Like",
+      "artists": "Curbi",
+      "genres": "bass"
     }
   ]
 }

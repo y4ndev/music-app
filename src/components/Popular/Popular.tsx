@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import style from "./Popular.module.scss";
 import { useDataStore } from "@/store/dataStore";
 import { Track } from "../Track/Track";
@@ -7,7 +7,6 @@ import { Track } from "../Track/Track";
 const Popular = () => {
   const data = useDataStore((state) => state.data);
   const fetchData = useDataStore((state) => state.fetchData);
-
 
   useEffect(() => {
     fetchData();
@@ -17,7 +16,7 @@ const Popular = () => {
     <div className={style.popular}>
       <h2 className={style.title}>Popular Songs</h2>
       <div className={style.items}>
-        {data.map((song) => (
+        {data.slice(0, 5).map((song) => (
           <Track key={song.id} data={song} />
         ))}
       </div>

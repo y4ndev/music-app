@@ -1,7 +1,7 @@
-import useAudioStore from "@/store/audioStore";
 import usePlayStore from "@/store/playStore";
-import React, { useRef } from "react";
-import control from "../../assets/images/play.png";
+import React, { useRef, useState } from "react";
+import play from "../../assets/images/play.png";
+import pause from "../../assets/images/pause.png";
 import style from "./Track.module.scss";
 
 interface ITrack {
@@ -16,7 +16,10 @@ interface ITrack {
 
 const Track: React.FC<ITrack> = ({ data }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const toggleAudio = usePlayStore((state) => state.handleToggleAudio);
+
+  const { currentTrack, handleToggleAudio, isPlaying } = usePlayStore();
+
+  const isActive = currentTrack?.id === data.id && isPlaying;
 
   return (
     <div className={style.track}>
@@ -30,8 +33,8 @@ const Track: React.FC<ITrack> = ({ data }) => {
       <div className={style.song}>
         <audio ref={audioRef} src={data.src} />
       </div>
-      <div className={style.control} onClick={() => toggleAudio(data)}>
-        <img src={control.src} alt="control" />
+      <div className={style.control} onClick={() => handleToggleAudio(data)}>
+        {isActive ? <img src={pause.src} alt="control" /> : <img src={play.src} alt="control" />}
       </div>
     </div>
   );
