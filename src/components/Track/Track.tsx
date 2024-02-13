@@ -1,3 +1,4 @@
+"use client";
 import usePlayStore from "@/store/playStore";
 import React, { useRef, useState } from "react";
 import play from "../../assets/images/play.png";

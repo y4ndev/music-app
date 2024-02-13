@@ -24,4 +24,13 @@ const Popular = () => {
   );
 };
 
+export async function getServerSideProps() {
+  const fetchData = useDataStore.getState().fetchData;
+  await fetchData();
+
+  return {
+    props: {},
+  };
+}
+
 export { Popular };
