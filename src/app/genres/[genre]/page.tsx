@@ -1,4 +1,3 @@
-"use server";
 import React from "react";
 import { Track } from "@/components/Track/Track";
 import { IData } from "@/services/musicData";
@@ -11,16 +10,12 @@ interface IGenre {
   };
 }
 
-interface IGenrePageProps {
-  data: IData[];
-  loading: boolean;
-  error: string | null;
-}
 
-export const getData = async () => {
+
+async function getData() {
   const { fetchData } = useDataStore.getState();
   return await fetchData();
-};
+}
 
 export default async function GenrePage({ params: { genre } }: IGenre) {
   const { fetchData, data, error, loading } = useDataStore.getState();
