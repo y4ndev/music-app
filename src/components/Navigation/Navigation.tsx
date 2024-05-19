@@ -11,7 +11,6 @@ interface NavCategory {
 
 interface NavLinks {
   top: NavCategory[];
-  middle: NavCategory[];
   bottom: NavCategory[];
 }
 
@@ -32,8 +31,6 @@ const Navigation = ({ navLinks }: Props) => {
   return (
     <nav className={style.menu}>
       <ul className={style.listTop}>{renderMenuItems(navLinks.top)}</ul>
-
-      <ul className={style.listMiddle}>{renderMenuItems(navLinks.middle)}</ul>
 
       <ul className={style.listBottom}>{renderMenuItems(navLinks.bottom)}</ul>
     </nav>

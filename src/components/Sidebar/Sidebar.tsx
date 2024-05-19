@@ -5,12 +5,8 @@ import style from "./Sidebar.module.scss";
 const navItems = {
   top: [
     { label: "Home", href: "/" },
-    { label: "Search", href: "/search" },
-    { label: "My library", href: "/library" },
-  ],
-  middle: [
-    { label: "New playlist", href: "/playlist" },
     { label: "Liked songs", href: "/liked" },
+    { label: "Playlist", href: "/playlist" },
   ],
   bottom: [
     { label: "Settings", href: "/settings" },
